@@ -14,7 +14,7 @@ export class UploadsBucketConstruct extends cdk.Construct {
   }
 }
 
-export class CdkStarterStack extends cdk.Stack {
+export class CdkIdentifiersStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
