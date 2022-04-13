@@ -1,11 +1,11 @@
 /* eslint-disable max-classes-per-file */
-import {Bucket} from '@aws-cdk/aws-s3';
-import * as cdk from '@aws-cdk/core';
-
-export class UploadsBucketConstruct extends cdk.Construct {
+import {Bucket} from 'aws-cdk-lib/aws-s3';
+import * as cdk from 'aws-cdk-lib';
+import {Construct} from 'constructs';
+export class UploadsBucketConstruct extends Construct {
   public readonly s3Bucket: Bucket;
 
-  constructor(scope: cdk.Construct, id: string) {
+  constructor(scope: Construct, id: string) {
     super(scope, id);
 
     this.s3Bucket = new Bucket(this, id, {
